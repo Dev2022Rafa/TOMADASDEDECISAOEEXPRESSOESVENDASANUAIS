@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Atual Ponto Digital"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-05 10:03:05 "/>
+        <attribute name="created" value="QXR1YWwgUG9udG8gRGlnaXRhbDtERVNLVE9QLURROTNHVTM7MjAyMi0wMi0wNTsiMDg6MDg6MDYgIjs0MDM0"/>
+        <attribute name="edited" value="QXR1YWwgUG9udG8gRGlnaXRhbDtERVNLVE9QLURROTNHVTM7MjAyMi0wMi0wNTsiMTA6MDM6MDUgIjs5OzQxMzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="janeiro, fevereiro, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro, media" type="Real" array="False" size=""/>
+            <input variable="janeiro"/>
+            <input variable="fevereiro"/>
+            <input variable="marco"/>
+            <input variable="abril"/>
+            <input variable="maio"/>
+            <input variable="junho"/>
+            <input variable="julho"/>
+            <input variable="agosto"/>
+            <input variable="setembro"/>
+            <input variable="outubro"/>
+            <input variable="novembro"/>
+            <input variable="dezembro"/>
+            <assign variable="media" expression="(janeiro+fevereiro+marco+abril+maio+junho+julho+agosto+setembro+outubro+novembro+dezembro)/4"/>
+            <output expression="media" newline="True"/>
+            <output expression="(janeiro+fevereiro+marco+abril+maio+junho+julho+agosto+setembro+outubro+novembro+dezembro)" newline="True"/>
+            <if expression="media&gt;=50000">
+                <then>
+                    <output expression="&quot;Parabens!!!! Voce Bateu a META e Ganhou 1 mil reias pra Gastar na CASA ROSA&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente Voce nao Atingiu a Meta e Nao Ira a CASA ROSA &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
